@@ -57,3 +57,17 @@ h2{font-size:clamp(2.35rem,4.1vw,4.4rem);line-height:1.09;letter-spacing:-.045em
 .manifesto-banner .manifesto-copy p:not(.micro){color:#f0e5d5;margin:26px 0}
 .manifesto-banner .signature{color:var(--sand);border-color:#ffffff60}
 @media(max-width:850px){.manifesto .manifesto-banner{min-height:680px;padding:45px 7%;align-items:flex-end}.manifesto-banner .manifesto-photo{background-position:64% center}.manifesto-banner:after{background:linear-gradient(0deg,rgba(8,24,39,.97) 0%,rgba(8,24,39,.84) 40%,rgba(8,24,39,.08) 85%)}.manifesto-banner .manifesto-copy{width:100%;padding:0 0 12px}.manifesto-banner .manifesto-copy p:not(.micro){font-size:1rem;line-height:1.6}}
+
+/* Fotografias das modalidades: imagens substituíveis, textos independentes */
+.sport{isolation:isolate;background:#17344c!important;transform:translateZ(0)}
+.sport::before{content:"";position:absolute;inset:0;z-index:-2;border:0;transform:none;background-size:cover;background-position:center 35%;transition:transform .65s cubic-bezier(.2,.7,.2,1);pointer-events:none}
+.sport.tennis::before{background-image:url('/images/lucas-tenis.png')}
+.sport.beach::before{background-image:url('/images/lucas-beach-tennis.png')}
+.sport.padel::before{background-image:url('/images/lucas-padel.png')}
+.sport::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(7,24,39,.42) 0%,rgba(7,24,39,.03) 36%,rgba(7,24,39,.84) 100%);pointer-events:none}
+.sport:hover::before{transform:scale(1.065)}
+.sport>span,.sport>div{position:relative;z-index:1}
+.sport p{color:#fff;text-shadow:0 1px 8px #07182799}
+.sport h3{text-shadow:0 2px 15px #071827aa}
+@media(max-width:850px){.sport::before{background-position:center 28%}}
+@media(prefers-reduced-motion:reduce){.sport:hover::before{transform:none}}
