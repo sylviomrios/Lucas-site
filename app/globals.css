@@ -37,3 +37,10 @@ h2{font-size:clamp(2.35rem,4.1vw,4.4rem);line-height:1.09;letter-spacing:-.045em
 
 /* Retrato real do professor */
 .about-image{background:#244a66}.about-image:before{display:none}.about-image img{display:block;width:100%;height:100%;min-height:730px;object-fit:cover;object-position:50% 42%;filter:saturate(.84) contrast(1.03)}@media(max-width:850px){.about-image img{min-height:430px;max-height:620px;object-position:50% 34%}}
+
+/* Abertura cinematográfica com saque real */
+.hero-serve-video{position:absolute;z-index:0;right:0;top:0;width:52%;height:100%;object-fit:cover;object-position:center 45%;pointer-events:none}
+.hero-with-video .court-lines,.hero-with-video .orbit-ball{display:none}
+.hero-with-video .hero-vignette{z-index:1;background:linear-gradient(90deg,#081827 0%,#081827f0 34%,#081827a0 56%,#08182718 100%)}
+.hero-with-video .hero-bottom{z-index:2}
+@media(max-width:850px){.hero-serve-video{width:100%;object-position:center 42%;opacity:.8}.hero-with-video .hero-vignette{background:linear-gradient(90deg,#081827db,#08182780),linear-gradient(0deg,#081827c0,transparent 38%,#08182788)}}
