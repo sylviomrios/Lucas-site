@@ -12,3 +12,16 @@ h2{font-size:clamp(2.9rem,6vw,6.5rem);line-height:1.02}
 /* Conteúdo editorial e contato */
 .coach-facts{display:flex;gap:40px;margin-top:30px;padding-top:24px;border-top:1px solid #172d4630}.coach-facts>div{display:flex;flex-direction:column;gap:5px}.coach-facts strong{font:800 clamp(2.5rem,4vw,4rem)/1 Outfit,sans-serif;color:var(--blue)}.coach-facts span{font-size:.65rem;font-weight:700;letter-spacing:.14em}.contact-link{display:inline-block;font-weight:800;letter-spacing:.13em;padding:5px 8px}.contact-link:hover,.nav-cta:hover{color:var(--sky)}.about-content .about-disclaimer{font-size:1rem!important;color:var(--navy);line-height:1.6!important;margin-top:25px!important}.hero-sub{max-width:390px}
 @media(max-width:390px){.coach-facts{gap:22px}.contact-actions{padding:20px 12px}}
+
+/* Escala tipografica editorial — equilibrio entre titulos e conteudo */
+.hero h1{font-size:clamp(2.9rem,5.3vw,5.6rem);line-height:1.04;max-width:760px}
+h2{font-size:clamp(2.35rem,4.1vw,4.4rem);line-height:1.09;letter-spacing:-.045em}
+.booking h2{font-size:clamp(2.4rem,4.4vw,4.6rem)}
+.film-frame strong{font-size:clamp(1.85rem,2.6vw,2.9rem);line-height:1.06}
+.sport h3{font-size:clamp(1.8rem,2.3vw,2.65rem)}
+.marquee{font-size:clamp(3rem,6.5vw,5.5rem)}
+.section-index{margin-bottom:44px}
+.manifesto-copy p:not(.micro){margin:26px 0}
+.about-content>p:not(.section-index){margin-top:26px}
+@media(max-width:850px){.hero h1{font-size:clamp(2.65rem,7.7vw,4.3rem);line-height:1.05}h2,.booking h2{font-size:clamp(2.25rem,7.4vw,3.75rem)}.section-index{margin-bottom:30px}.hero-sub{max-width:330px}}
+@media(max-width:390px){.hero h1{font-size:clamp(2.35rem,7.5vw,3rem)}h2,.booking h2{font-size:clamp(2.15rem,7.2vw,2.9rem)}}
