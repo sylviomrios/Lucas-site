@@ -25,3 +25,12 @@ h2{font-size:clamp(2.35rem,4.1vw,4.4rem);line-height:1.09;letter-spacing:-.045em
 .about-content>p:not(.section-index){margin-top:26px}
 @media(max-width:850px){.hero h1{font-size:clamp(2.65rem,7.7vw,4.3rem);line-height:1.05}h2,.booking h2{font-size:clamp(2.25rem,7.4vw,3.75rem)}.section-index{margin-bottom:30px}.hero-sub{max-width:330px}}
 @media(max-width:390px){.hero h1{font-size:clamp(2.35rem,7.5vw,3rem)}h2,.booking h2{font-size:clamp(2.15rem,7.2vw,2.9rem)}}
+
+/* Ajuste fino da seção de apresentação */
+.about-content h2{font-size:clamp(2.25rem,3.45vw,3.75rem);line-height:1.08;letter-spacing:-.045em}
+.about-content{padding-top:72px;padding-bottom:72px}
+.about-content>p:not(.section-index){margin-top:20px;line-height:1.7}
+.about-content .section-index{margin-bottom:26px}
+.about-content .coach-facts{margin-top:22px;padding-top:20px}
+.about-content .about-disclaimer{margin-top:18px!important}
+@media(max-width:850px){.about-content h2{font-size:clamp(2.15rem,6.5vw,3.2rem)}.about-content{padding:55px 6%}}
