@@ -71,3 +71,34 @@ h2{font-size:clamp(2.35rem,4.1vw,4.4rem);line-height:1.09;letter-spacing:-.045em
 .sport h3{text-shadow:0 2px 15px #071827aa}
 @media(max-width:850px){.sport::before{background-position:center 28%}}
 @media(prefers-reduced-motion:reduce){.sport:hover::before{transform:none}}
+
+/* Redesign editorial das modalidades — composição real em HTML/CSS */
+.modalities-editorial{position:relative;overflow:hidden;background:#091b2b;color:#f0e5d5;padding:115px 8% 100px;isolation:isolate}
+.modalities-editorial::before{content:"";position:absolute;top:-220px;right:-120px;width:640px;height:640px;border:1px solid #72b7dc2b;border-radius:50%;pointer-events:none}
+.modalities-editorial::after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent 38%,#1b4d6918 38.1%,transparent 38.3%);z-index:-1;pointer-events:none}
+.modalities-top{display:flex;align-items:end;justify-content:space-between;gap:35px;margin-bottom:54px}
+.modalities-top .section-index{color:#67c9f3;margin-bottom:26px}
+.modalities-top h2{font-size:clamp(3.4rem,7.5vw,8.4rem);font-weight:900;line-height:.89;letter-spacing:-.065em;font-style:italic}
+.modalities-top h2 i{color:#27b9f4}
+.modalities-intro{max-width:300px;font-size:1rem;line-height:1.7;color:#c1d1dc;padding-bottom:10px}
+.sports-editorial{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);grid-template-rows:repeat(2,minmax(0,270px));gap:20px}
+.sports-editorial .sport{height:auto;min-height:0;transform:none!important;padding:30px;clip-path:polygon(7% 0,100% 0,93% 100%,0 100%);background:#17344c!important;transition:filter .35s;isolation:isolate}
+.sports-editorial .sport.tennis{grid-row:span 2;padding:42px}
+.sports-editorial .sport.beach,.sports-editorial .sport.padel{margin-left:0}
+.sports-editorial .sport::before{inset:0;background-size:cover;background-position:center 32%;transition:transform .7s cubic-bezier(.22,1,.36,1);z-index:-2}
+.sports-editorial .sport.tennis::before{background-position:center 29%}
+.sports-editorial .sport::after{background:linear-gradient(180deg,#06182755 0%,transparent 35%,#041320e8 100%);z-index:-1}
+.sports-editorial .sport:hover::before{transform:scale(1.08)}
+.sports-editorial .sport:hover{filter:brightness(1.08)}
+.sports-editorial .sport-counter{font:700 .74rem 'DM Sans',sans-serif;letter-spacing:.16em;color:#fff}
+.sports-editorial .sport-counter b{color:#8dc6e0;font-weight:500}
+.sports-editorial .sport-info{margin-top:auto;padding-right:44px}
+.sports-editorial .sport-line{display:block;width:43px;height:3px;background:#25b9f2;margin-bottom:17px}
+.sports-editorial .sport h3{font-size:clamp(2rem,3.2vw,4.5rem);line-height:.96;font-style:italic;font-weight:900;letter-spacing:-.06em;text-shadow:0 3px 15px #061827a0}
+.sports-editorial .sport.tennis h3{font-size:clamp(3.5rem,5.5vw,6.5rem)}
+.sports-editorial .sport p{font-size:.95rem;max-width:300px;margin-top:13px;color:#e3eef3}
+.sports-editorial .sport-arrow{top:auto;bottom:28px;right:38px;border:1px solid #68d2ff;border-radius:50%;width:43px;height:43px;display:flex;align-items:center;justify-content:center;font-size:1.25rem}
+.modalities-foot{display:flex;justify-content:space-between;gap:20px;margin-top:26px;color:#8ab0c5;font-size:.64rem;font-weight:700;letter-spacing:.21em}
+@media(max-width:850px){.modalities-editorial{padding:85px 6% 75px}.modalities-top{display:block;margin-bottom:36px}.modalities-top h2{font-size:clamp(3.2rem,11vw,6rem)}.modalities-intro{margin-top:23px;max-width:390px}.sports-editorial{grid-template-columns:1fr;grid-template-rows:none;gap:14px}.sports-editorial .sport{height:340px;clip-path:polygon(5% 0,100% 0,95% 100%,0 100%);padding:25px}.sports-editorial .sport.tennis{grid-row:auto;height:480px;padding:28px}.sports-editorial .sport.tennis h3{font-size:clamp(3rem,11vw,5rem)}.sports-editorial .sport-arrow{right:26px;bottom:24px}.modalities-foot{font-size:.55rem;line-height:1.6}}
+@media(max-width:420px){.sports-editorial .sport{height:310px}.sports-editorial .sport.tennis{height:410px}.sports-editorial .sport h3{font-size:2.5rem}.sports-editorial .sport-info{padding-right:32px}.modalities-foot span:last-child{display:none}}
+@media(prefers-reduced-motion:reduce){.sports-editorial .sport:hover::before{transform:none}}
