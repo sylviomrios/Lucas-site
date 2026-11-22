@@ -44,3 +44,16 @@ h2{font-size:clamp(2.35rem,4.1vw,4.4rem);line-height:1.09;letter-spacing:-.045em
 .hero-with-video .hero-vignette{z-index:1;background:linear-gradient(90deg,#081827 0%,#081827f0 34%,#081827a0 56%,#08182718 100%)}
 .hero-with-video .hero-bottom{z-index:2}
 @media(max-width:850px){.hero-serve-video{width:100%;object-position:center 42%;opacity:.8}.hero-with-video .hero-vignette{background:linear-gradient(90deg,#081827db,#08182780),linear-gradient(0deg,#081827c0,transparent 38%,#08182788)}}
+
+/* Banner editorial: imagem e conteúdo independentes */
+.manifesto .manifesto-banner{position:relative;display:flex;align-items:center;min-height:clamp(540px,56vw,720px);padding:clamp(35px,6vw,90px);isolation:isolate;overflow:hidden;background:#132b40;color:var(--sand)}
+.manifesto-banner .manifesto-photo{position:absolute;inset:0;z-index:-2;min-height:0;background-image:url('/images/lucas-backhand-horizontal.png');background-size:cover;background-position:center center}
+.manifesto-banner .manifesto-photo:before{content:none}
+.manifesto-banner:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(8,24,39,.94) 0%,rgba(8,24,39,.82) 32%,rgba(8,24,39,.35) 58%,rgba(8,24,39,.02) 100%);pointer-events:none}
+.manifesto-banner .manifesto-copy{width:min(49%,510px);position:relative;z-index:1}
+.manifesto-banner .manifesto-copy .micro{color:var(--sky)}
+.manifesto-banner .manifesto-copy h2{color:var(--sand)}
+.manifesto-banner .manifesto-copy h2 i{color:var(--sky)}
+.manifesto-banner .manifesto-copy p:not(.micro){color:#f0e5d5;margin:26px 0}
+.manifesto-banner .signature{color:var(--sand);border-color:#ffffff60}
+@media(max-width:850px){.manifesto .manifesto-banner{min-height:680px;padding:45px 7%;align-items:flex-end}.manifesto-banner .manifesto-photo{background-position:64% center}.manifesto-banner:after{background:linear-gradient(0deg,rgba(8,24,39,.97) 0%,rgba(8,24,39,.84) 40%,rgba(8,24,39,.08) 85%)}.manifesto-banner .manifesto-copy{width:100%;padding:0 0 12px}.manifesto-banner .manifesto-copy p:not(.micro){font-size:1rem;line-height:1.6}}
