@@ -8,3 +8,7 @@ h2{font-size:clamp(2.9rem,6vw,6.5rem);line-height:1.02}
 .marquee{font-size:clamp(3.5rem,8vw,7rem)}
 @media(max-width:850px){.hero h1{font-size:clamp(2.75rem,9vw,5rem)}h2,.booking h2{font-size:clamp(2.7rem,9vw,4.7rem)}.hero-inner{right:6%}}
 @media(max-width:390px){.hero h1{font-size:clamp(2.55rem,8.5vw,3.5rem)}}
+
+/* Conteúdo editorial e contato */
+.coach-facts{display:flex;gap:40px;margin-top:30px;padding-top:24px;border-top:1px solid #172d4630}.coach-facts>div{display:flex;flex-direction:column;gap:5px}.coach-facts strong{font:800 clamp(2.5rem,4vw,4rem)/1 Outfit,sans-serif;color:var(--blue)}.coach-facts span{font-size:.65rem;font-weight:700;letter-spacing:.14em}.contact-link{display:inline-block;font-weight:800;letter-spacing:.13em;padding:5px 8px}.contact-link:hover,.nav-cta:hover{color:var(--sky)}.about-content .about-disclaimer{font-size:1rem!important;color:var(--navy);line-height:1.6!important;margin-top:25px!important}.hero-sub{max-width:390px}
+@media(max-width:390px){.coach-facts{gap:22px}.contact-actions{padding:20px 12px}}
