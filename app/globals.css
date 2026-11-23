@@ -102,3 +102,21 @@ h2{font-size:clamp(2.35rem,4.1vw,4.4rem);line-height:1.09;letter-spacing:-.045em
 @media(max-width:850px){.modalities-editorial{padding:85px 6% 75px}.modalities-top{display:block;margin-bottom:36px}.modalities-top h2{font-size:clamp(3.2rem,11vw,6rem)}.modalities-intro{margin-top:23px;max-width:390px}.sports-editorial{grid-template-columns:1fr;grid-template-rows:none;gap:14px}.sports-editorial .sport{height:340px;clip-path:polygon(5% 0,100% 0,95% 100%,0 100%);padding:25px}.sports-editorial .sport.tennis{grid-row:auto;height:480px;padding:28px}.sports-editorial .sport.tennis h3{font-size:clamp(3rem,11vw,5rem)}.sports-editorial .sport-arrow{right:26px;bottom:24px}.modalities-foot{font-size:.55rem;line-height:1.6}}
 @media(max-width:420px){.sports-editorial .sport{height:310px}.sports-editorial .sport.tennis{height:410px}.sports-editorial .sport h3{font-size:2.5rem}.sports-editorial .sport-info{padding-right:32px}.modalities-foot span:last-child{display:none}}
 @media(prefers-reduced-motion:reduce){.sports-editorial .sport:hover::before{transform:none}}
+
+/* Enquadramento refinado: priorizar rosto e raquete nos painéis horizontais */
+@media(min-width:851px){
+.sports-editorial{grid-template-rows:repeat(2,minmax(0,320px));gap:22px}
+.sports-editorial .sport.beach::before{background-position:center 7%}
+.sports-editorial .sport.padel::before{background-position:center 6%}
+.sports-editorial .sport.tennis::before{background-position:center 24%}
+.sports-editorial .sport.beach,.sports-editorial .sport.padel{padding:28px 48px 30px 56px}
+.sports-editorial .sport.beach h3{font-size:clamp(2rem,2.65vw,3.3rem)}
+}
+.sports-editorial .sport-arrow{position:absolute;z-index:2;right:48px;bottom:30px;top:auto;flex-shrink:0}
+.sports-editorial .sport-counter{position:relative;z-index:2}
+@media(max-width:850px){
+.sports-editorial .sport.beach::before{background-position:center 10%}
+.sports-editorial .sport.padel::before{background-position:center 8%}
+.sports-editorial .sport.tennis::before{background-position:center 24%}
+.sports-editorial .sport-arrow{right:32px;bottom:24px}
+}
